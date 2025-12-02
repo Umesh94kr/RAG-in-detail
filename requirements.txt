@@ -1,0 +1,15 @@
+huggingface_hub
+langchain
+pypdf
+PyMuPDF
+python-dotenv
+langchain-community
+langchain_openai
+rank_bm25
+faiss-cpu
+langchain-ollama
+ollama
+deepeval
+langchain_text_splitters
+langchain-huggingface
+sentence-transformers
