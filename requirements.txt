@@ -13,3 +13,5 @@ deepeval
 langchain_text_splitters
 langchain-huggingface
 sentence-transformers
+bs4
+langchain_chroma
