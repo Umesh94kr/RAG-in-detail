@@ -108,7 +108,15 @@ Below is a deep explanation of each.
 
 # **1. HNSW (Hierarchical Navigable Small World Graph)**
 
+HNSW creates a **hierarchical**, **tree-like structure** where each node of the tree represents a set of vectors. The edges between the nodes represent the similarity between the vectors. The algorithm starts by creating a set of nodes, each with a small number of vectors. This could be done randomly or by clustering the vectors with algorithms like k-means, where each cluster becomes a node.
+
+The algorithm then examines the vectors of each node and draws an edge between that node and the nodes that have the most similar vectors to the one it has.
+
+When we query an HNSW index, it uses this graph to navigate through the tree, visiting the nodes that are most likely to contain the closest vectors to the query vector.
+
 HNSW builds a **multi-level graph** where nodes are vectors and edges connect similar vectors.
+
+Explore in more detail : <link> https://www.pinecone.io/learn/series/faiss/hnsw/ </link>
 
 ### How it works
 
