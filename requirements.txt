@@ -17,3 +17,4 @@ bs4
 langchain_chroma
 langchain_experimental
 rank_bm25
+spacy
